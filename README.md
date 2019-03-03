@@ -1,4 +1,4 @@
-# gatsby-casper
+# gatsby-casper [![Netlify Status](https://api.netlify.com/api/v1/badges/152d2680-84d3-4401-ad1e-fe39d4d046f2/deploy-status)](https://app.netlify.com/sites/databreak/deploys)
 
 Demo: https://gatsby-casper.netlify.com/  
 

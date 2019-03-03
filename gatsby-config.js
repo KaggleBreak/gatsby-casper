@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Ghost',
-    description: 'The professional publishing platform',
-    siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+    title: 'DataBreak',
+    description: 'DataBreak community blog',
+    siteUrl: 'https://databreak.netlify.com',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -64,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-XXXX-Y',
+        trackingId: 'UA-89689523-1',
         // Puts tracking script in the head instead of the body
         head: true,
         // IP anonymization for GDPR compliance
