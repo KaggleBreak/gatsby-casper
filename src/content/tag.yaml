@@ -1,3 +1,6 @@
 - id: speeches
   description: Some of the greatest words ever spoken.
   image: img/speeches-cover.jpg
+- id: MachineLearning
+  description: About machine learning related articles.
+  image: img/speeches-cover.jpg

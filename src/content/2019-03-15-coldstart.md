@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Data Scientist’s Dilemma: The Cold Start Problem – Ten Machine Learning Examples Review (KR)"
-author: syleeie
-tags: machine learning
 image: img/syleeie/2019-03-15-coldstart.jpeg
+author: syleeie
 date: "2019-03-15T23:46:37.121Z"
-draft: false
+tags: 
+  - MachineLearning
 ---
 
 
