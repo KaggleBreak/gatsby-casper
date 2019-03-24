@@ -2,7 +2,8 @@
 
 This is a static blog generator and starter gatsby repo. A port of [Casper](https://github.com/TryGhost/Casper) v2 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
 
-## Getting Started
+## 설치 및 실행 가이드
+
 ```
 # install node, typescript (MAC)
 $ brew install node
@@ -17,43 +18,8 @@ $ npm install
 $ npm run dev
 ```
 
-### Deploy to Netlify
+## 글 작성 후 올리는 방법에 대한 가이드
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scttcper/gatsby-casper)
-
-## How to configure Google Analytics
-Edit `gatsby-config.js` and add your tracking ID
-
-
-```javascript
-{
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      // Here goes your tracking ID
-      trackingId: 'UA-XXXX-Y',
-      // Puts tracking script in the head instead of the body
-      head: true,
-      // IP anonymization for GDPR compliance
-      anonymize: true,
-      // Disable analytics for users with `Do Not Track` enabled
-      respectDNT: true,
-      // Avoids sending pageview hits from custom paths
-      exclude: ['/preview/**'],
-      // Specifies what percentage of users should be tracked
-      sampleRate: 100,
-      // Determines how often site speed tracking beacons will be sent
-      siteSpeedSampleRate: 10,
-    },
-  },
-```
-
-## How to edit your site title and description 
-Edit `gatsby-config.js` section `siteMetadata`
-
-```javascript
- siteMetadata: {
-    title: 'My awesome site name',
-    description: 'This is a description for my site',
-    siteUrl: 'https://mysite.com', // full path to blog - no ending slash
-  },
-```
+- [가이드라인](https://github.com/KaggleBreak/gatsby-casper/blob/master/GUIDELINE.md) 문서 참고
+- 로컬 환경에서 글 작성 후 빌드를 통해 깨지지 않는지 확인
+- 태그, 저자명을 새로 추가해야 하는 경우 `src/content` 경로의 `author.yaml`, `tag.yaml` 확인
