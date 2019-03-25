@@ -4,3 +4,6 @@
 - id: MachineLearning
   description: About machine learning related articles.
   image: img/speeches-cover.jpg
+- id: NLP
+  description: About Natural Language Processing related articles.
+  image: img/writing.jpg
