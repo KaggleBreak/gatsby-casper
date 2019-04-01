@@ -7,3 +7,6 @@
 - id: NLP
   description: About Natural Language Processing related articles.
   image: img/writing.jpg
+- id: FeatureSelection
+  description: About Feature selection related articles.
+  image: img/writing.jpg
