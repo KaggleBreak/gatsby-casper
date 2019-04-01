@@ -38,26 +38,20 @@ const About: React.FunctionComponent = () => (
           <PostFullContent className="post-full-content">
             <div className="post-content">
               <p>
-                Ghost is professional publishing platform designed for modern journalism. This is a
-                demo site of a basic Ghost install to give you a general sense of what a new Ghost
-                site looks like when set up for the first time.
+                '데이터뽀개기'는 2015년에 개설된 캐글(kaggle.com) 플랫폼 대회를 참여하는 스터디 그룹 '캐글뽀개기'에서 출발하였습니다. 처음 라면을 끓이는 사람처럼 데이터를 쉽게 뽀개는 것을 목표로 수평적으로 공부할 수 있는 오픈 모임을 지향합니다. 데이터 관련 현장에서 일하거나, 데이터 분야로 이직/취업 하려는 사람들의 Practical Data Playground를 만들고자 합니다.
               </p>
               <blockquote>
                 <p>
-                  If you'd like to set up a site like this for yourself, head over to{' '}
-                  <a href="https://ghost.org">Ghost.org</a> and start a free 14 day trial to give
-                  Ghost a try!
+                데이터뽀개기 공식 블로그는 데이터뽀개기 내 운영자들이 공동 작성하는 팀 Github 블로그입니다. 
+                전 세계에 있는 주요 Data Science 커뮤니티 사이트에 있는 데이터(분석, 엔지니어링, 사이언스) 아티클 자료들을 한글화 하여 데이터뽀개기 회원 분들에게 공유하는 컨트리뷰터가 Creator 운영진의 역할입니다. 
                 </p>
               </blockquote>
               <p>
-                If you're a developer: Ghost is a completely open source (MIT) Node.js application
-                built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite,
-                and is publicly available <a href="https://github.com/TryGhost/ghost">on Github</a>.
+              Kdnuggets, Towards Data Science, Analyticsvidhya, Medium, Kaggle Blog와 같은 사이트를 번역합니다.
+                 <a href="https://github.com/KaggleBreak/gatsby-casper">on Github</a>.
               </p>
               <p>
-                If you need help with using Ghost, you'll find a ton of useful articles on{' '}
-                <a href="https://help.ghost.org">our knowledgebase</a>, as well as extensive{' '}
-                <a href="https://docs.ghost.org">developer documentation</a>.
+                만약 데이터뽀개기 공식 블로그를 돕거나 컨트리뷰터 하고 싶다면 다음의 이메일 주소 (operator@databreak.org)에 연락해주세요!
               </p>
             </div>
           </PostFullContent>
