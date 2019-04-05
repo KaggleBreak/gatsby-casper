@@ -193,9 +193,18 @@ Figure 9: Online과 Offline 예측 서비스에서 feature vector 셋을 예측�
 
 모델 간의 A/B 테스팅을 위해, 사용자들은 간단하게 UUID나 태그를 통해 비교할 모델들을 배포할 수 있고, 클라이언트 서비스에서 Uber의 실험 프레임워크를 사용하여 트래픽의 일부를 각 모델에 보내고 성능 지표를 트래킹할 수 있습니다.
 
+## Monitor predictions
+
+모델이 학습되고 평가될 때, 기록 데이터가 항상 사용됩니다. 특정 모델이 미래에도 잘 동작할 지 확인하기 위해, 데이터 파이프라인이 계속 정확한 데이터를 전송하고 모델이 더 이상 정확하지 않게 production 환경이 변하지 않았는지 모델의 예측 결과를 모니터링 하는 것은 중요합니다.
+
+이 문제를 해결하기 위해 Michelangelo는 자동으로 로그를 기록하고, 선택적으로 예측 결과 비율을 저장하여 데이터 파이프라인에서 생성된 실제 관측 결과(또는 label)와 결합합니다. 이러한 정보를 통해 우리는 실시간으로 모델의 정확도에 대한 지표를 생성할 수 있습니다. 회귀 모델의 경우, 아래 그림과 같이 우리는 예측 결과에 대한 R-squared/coefficient, root mean square logarithmic error (RMSLE), root mean square error (RMSE), mean absolute error 지표를 Uber의 시계열 모니터링 시스템에 발송하여 사용자들이 시간에 따라 차트를 분석하고 특정 threshold 값으로 알람을 설정할 수 있도록 합니다.
+
+![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image8.png)
+Figure 10: 예측 결과가 샘플링되고 관측 결과와 비교하여 모델의 정확도 지표를 생성합니다.
+
 ## Building on the Michelangelo platform
 
-앞으로 몇 달 동안, 우리는 고객 팀과 Uber 비즈니스 전반의 성장을 지원하기 위해 기존 시스템을 계속 확장하고 강화할 계획입니다. 플랫폼 계층이 성숙 해짐에 따라 우리는 머신러닝의 민주화를 추진하고 비즈니스 요구를 보다 잘 지원하기 위해 더 높은 수준의 도구와 서비스에 투자 할 계획입니다.
+앞으로 몇 달 동안, 우리는 고객 팀과 Uber 비즈니스 전반의 성장을 지원하기 위해 기존 시스템을 아래와 같은 기능들에 대해 계속 확장하고 강화할 계획입니다. 플랫폼 계층이 성숙 해짐에 따라 우리는 머신러닝의 민주화를 추진하고 비즈니스 요구를 보다 잘 지원하기 위해 더 높은 수준의 도구와 서비스에 투자 할 계획입니다.
 
 - AutoML
 - Model visualization
