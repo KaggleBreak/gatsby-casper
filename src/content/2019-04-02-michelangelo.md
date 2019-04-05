@@ -113,7 +113,7 @@ DSL 표현식들은 모델 구성의 한 부분이고, 같은 최종 feature 세
 
 학습 job들은 웹 UI나 API, 또는 종종 Jupyter notebook을 통해 관리되고 구성될 수 있습니다. 많은 팀들은 API와 workflow 도구를 사용하여 정기적으로 모델을 재학습합니다.
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image2.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image2.png)
 Figure 3: 모델 학습 작업들은 Feature Store와 학습 데이터 저장소의 데이터셋을 사용하여 모델을 학습하고, 모델 저장소에 저장합니다.
 
 ## Evaluate models
@@ -138,10 +138,10 @@ Michelangelo에서 학습된 모든 모델들에 대한 버전 객체를 우리�
 
 회귀 모델에 대한 모델 정확성 보고서는 표준 정확도 지표와 차트들을 보여줍니다. 분류 모델들은 Figure 4나 5와 같이 다른 집합을 표시합니다:
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image9.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image9.png)
 Figure 4: Regression 모델 리포트는 regression과 연관된 성능 지표를 보여줍니다.
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image10.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image10.png)
 Figure 5: 이진 분류의 성능 리포트는 분류와 연관된 성능 지표를 보여줍니다.
 
 ### Decision tree visualization
@@ -155,7 +155,7 @@ Figure 6: Tree 모델들은 강력한 tree 시각화로 탐색할 수 있습니�
 
 Michelangelo는 개별 feature들에 대해 모델에서의 중요도 순으로 부분적 의존 관계 그래프와 분포 histogram을 보여주는 feature 보고서를 제공합니다. 아래와 같이, 두 가지 feature를 선택하면 사용자는 양방향 부분적 의존 관계 다이어그램을 통해 feature들의 상호작용에 대해 이해할 수 있습니다:
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image11.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image11.png)
 Figure 7: Feature들, 모델에서의 영향력, feature 간 상호작용을 탐색해 볼 수 있습니다.
 
 ## Deploy models
@@ -171,7 +171,7 @@ Michelangelo는 UI 또는 API를 통해 모델 배포 관리를 위한 end-to-en
 **Library deployment.** 
 우리는 다른 서비스에서 라이브러리 형태로 내재화되어 Java API로 호출될 수 있는 모델을 serving 컨테이너에 배포하려고 합니다. (아래 Figure 8에는 표시되어 있지 않지만 online deployment와 유사하게 동작합니다)
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image6.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image6.png)
 Figure 8: 모델 서빙을 위해 모델 저장소로부터 모델이 online과 offline 컨테이너에 배포됩니다.
 
 모든 케이스에서, 배포에 필요한 모델 결과물(metadata 파일, 모델 parameter 파일, 컴파일된 DSL 표현식들)은 ZIP 파일로 압축되고, 우리의 표준 코드 배포 인프라를 사용하여 Uber의 데이터 센터를 통해 연관있는 host에게로 복사됩니다. 예측 컨테이너들은 자동적으로 디스크로부터 새로운 모델을 불러오고 예측 요청을 처리하기 시작합니다.
@@ -182,7 +182,7 @@ Figure 8: 모델 서빙을 위해 모델 저장소로부터 모델이 online과 
 
 한번 모델이 배포되고 서빙 컨테이너에 로드되면, 모델들은 데이터 파이프라인이나 client 서비스로 부터 직접 불러온 feature 데이터를 기반으로 예측 작업을하는 데 사용됩니다. 원본 feature들은 원본 feature를 수정하거나, Feature Store에서 부가적인 feature를 추가할 수 있는 컴파일된 DSL 표현식에 전달됩니다. 그리고 최종 feature vector가 계산되어 스코어링을 위해 모델에 전달됩니다. Online 모델의 경우, 예측 결과는 네트워크를 통해 Client 서비스에 반환됩니다. Offline 모델의 경우, 예측 결과는 Hive에 다시 쓰여지고, 배치 작업에 사용되거나 사용자가 SQL 기반 쿼리 툴을 사용해서 접근할 수 있습니다.
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image3.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image3.png)
 Figure 9: Online과 Offline 예측 서비스에서 feature vector 셋을 예측하는데 사용합니다.
 
 ## Referencing models
@@ -199,7 +199,7 @@ Figure 9: Online과 Offline 예측 서비스에서 feature vector 셋을 예측�
 
 이 문제를 해결하기 위해 Michelangelo는 자동으로 로그를 기록하고, 선택적으로 예측 결과 비율을 저장하여 데이터 파이프라인에서 생성된 실제 관측 결과(또는 label)와 결합합니다. 이러한 정보를 통해 우리는 실시간으로 모델의 정확도에 대한 지표를 생성할 수 있습니다. 회귀 모델의 경우, 아래 그림과 같이 우리는 예측 결과에 대한 R-squared/coefficient, root mean square logarithmic error (RMSLE), root mean square error (RMSE), mean absolute error 지표를 Uber의 시계열 모니터링 시스템에 발송하여 사용자들이 시간에 따라 차트를 분석하고 특정 threshold 값으로 알람을 설정할 수 있도록 합니다.
 
-![](http://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image8.png)
+![](https://1fykyq3mdn5r21tpna3wkdyi-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/image8.png)
 Figure 10: 예측 결과가 샘플링되고 관측 결과와 비교하여 모델의 정확도 지표를 생성합니다.
 
 ## Building on the Michelangelo platform
