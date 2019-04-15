@@ -32,7 +32,7 @@ const config: WebsiteConfig = {
   title: 'DataBreak',
   description: 'DataBreak community blog',
   coverImage: 'img/blog-cover.jpg',
-  logo: 'img/ghost-logo.png',
+  logo: 'img/databreak-logo.png',
   lang: 'en',
   siteUrl: 'https://databreak.netlify.com',
   facebook: 'https://www.facebook.com/groups/databreak/',
